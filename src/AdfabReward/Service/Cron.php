@@ -52,7 +52,7 @@ class Cron extends EventProvider implements ServiceManagerAwareInterface
      */
     public function anniversary()
     {
-        $sm = $this->getServiceManager()
+        $sm = $this->getServiceManager();
         $em = $sm->get('adfabreward_doctrine_em');
         $actionService = $sm->get('adfabreward_action_service');
 

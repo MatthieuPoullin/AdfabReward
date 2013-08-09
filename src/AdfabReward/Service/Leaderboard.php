@@ -117,7 +117,7 @@ class Leaderboard extends EventProvider implements ServiceManagerAwareInterface
      */
     public function getLeaderboard( $type='', $timeScale='', $search='', $nbItems = 5)
     {
-    	$query = $this->getLeaderboardQuery($type='', $timeScale='', $search);
+    	$query = $this->getLeaderboardQuery($type='', $timeScale, $search);
 		if ($nbItems>0) {
             $query->setMaxResults($nbItems);
         }
